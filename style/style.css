@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap");
+:root {
+  /* * Color */
+  --bran-color: #203271;
+  --heading: #101c45;
+  --text: #fff;
+  --accent: #9beae0;
+  --black80: #0606066b;
+  /* Font */
+  --body-font: "DM Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--body-font);
+}
+
+html.sr .benefits {
+  visibility: hidden;
+}
+
+body {
+  width: 100%;
+  background-color: #fff;
+}
+
+nav {
+  width: 100%;
+  padding: 1rem;
+}
+
+header {
+  max-width: 85rem;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.first-header {
+  width: 650px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.93rem;
+}
+
+.logo i {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.logo a {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+}
+
+.menu .list {
+  list-style: none;
+}
+
+.menu .list .link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--heading);
+  transition: color 0.4s ease-in-out;
+}
+
+.menu .list:not(:first-child) .link {
+  color: var(--black80);
+}
+
+.menu .list .link:hover {
+  color: var(--heading);
+}
+
+.login-cta {
+  display: flex;
+  align-items: center;
+  gap: 0.9375rem;
+  padding: 0.6rem;
+}
+
+.login-cta .login {
+  padding: 0.5rem 1.25rem;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--heading);
+}
+
+.login-cta .book-now {
+  padding: 0.5rem 1.25rem;
+  background: none;
+  outline: none;
+  border: 1px solid var(--heading);
+  color: var(--heading);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in, color 0.4s linear;
+}
+
+.login-cta .book-now:hover {
+  background-color: var(--heading);
+  color: var(--text);
+}
+
+.container {
+  max-width: 85rem;
+  margin: auto;
+  /* height: 100vh; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.title-section {
+  max-width: 600px;
+}
+
+.title-section .title h1 {
+  font-size: 4.5rem;
+  font-weight: 600;
+  margin-bottom: 0.9375rem;
+  color: var(--heading);
+}
+
+.title-section .title p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--heading);
+  margin: 0.9375rem 0 2.5rem 0;
+}
+
+.title-section .btn-cta {
+  padding: 0.9375rem 2.1875rem;
+  background: var(--heading);
+  color: var(--text);
+  outline: none;
+  border: none;
+  font-size: 1.125rem;
+  font-weight: 400;
+  /* line-height: 30px; */
+  cursor: pointer;
+}
+
+.img img {
+  filter: drop-shadow(0 0 1rem);
+  /* width: 452px; */
+}
+
+.parallelogram {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 110%;
+  z-index: -1;
+  /* ! clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
+  clip-path: polygon(42% 0, 100% 0%, 75% 100%, 16% 100%);
+  background-color: var(--accent);
+}
+
+.testimonial {
+  position: absolute;
+  max-width: 312px;
+  top: 25%;
+  right: 26%;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.25rem;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.profiles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile img {
+  width: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile h5 {
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.quote i {
+  font-size: 24px;
+  color: var(--black80);
+}
+
+.testi p {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--heading);
+}
+
+.benefits {
+  max-width: 85rem;
+  height: 110%;
+  margin: auto;
+  background-color: var(--bran-color);
+  padding: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+
+.box {
+  display: flex;
+  gap: 25px;
+  align-items: start;
+}
+
+.box .icon {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.title-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.box .title-benefits h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.box .title-benefits p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 26px;
+  color: #ffffff52;
+}
